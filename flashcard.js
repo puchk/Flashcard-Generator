@@ -1,15 +1,10 @@
-// =============================CONSTRUCTOR FUNCTIONS=============================
+var BasicCard = require("./basicCard");
+var ClozeCard = require("./clozeCard");
 
-function BasicCard(front, back) {
-	this.front = front;
-	this.back = back;
-}
 
-function ClozeCard(text, cloze) {
-	this.fullText = text;
-	this.cloze = cloze;
-	this.partial = this.fullText.replace(this.cloze, "...");
-}
+
+
+
 
 // =============================EXAMPLES=============================
 var firstPresident = new BasicCard(
@@ -22,7 +17,7 @@ console.log(firstPresident.front);
 console.log(firstPresident.back); 
 
 var firstPresidentCloze = new ClozeCard(
-    "George Washington was the first president of the United States.", "George t");
+    "George Washington was the first president of the United States.", "George Washington");
 
 // "George Washington"
 console.log(firstPresidentCloze.cloze); 
@@ -34,4 +29,4 @@ console.log(firstPresidentCloze.partial);
 console.log(firstPresidentCloze.fullText);
 
 // // Should throw or log an error because "oops" doesn't appear in "This doesn't work"
-// var brokenCloze("This doesn't work", "oops"); 
+var brokenCloze = new ClozeCard("This doesn't work", "oops"); 
