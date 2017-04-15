@@ -1,11 +1,6 @@
 var BasicCard = require("./basicCard");
 var ClozeCard = require("./clozeCard");
 
-
-
-
-
-
 // =============================EXAMPLES=============================
 var firstPresident = new BasicCard(
     "Who was the first president of the United States?", "George Washington");

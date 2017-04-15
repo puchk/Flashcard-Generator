@@ -8,16 +8,8 @@ function ClozeCard(text, cloze) {
 	else {
 		console.log(this.cloze + " doesn't appear in "+ this.fullText);
 	}
-	// console.log("A: "+this.fullText.replace(this.cloze, "..."));
-	
-	// this.partial = function(){
-	// 	if()
-	// 		console.log(this.fullText.replace(this.cloze, "..."));
-	// }
-	// this.partial = this.fullText.replace(this.cloze, "...");
-	// this.partial = this.partialText();
 }
-	// ClozeCard.prototype.partiaText = function() {
+	// ClozeCard.prototype.partialText = function() {
 	// 	console.log(this.fullText.replace(this.cloze, "..."));
 	// };
 
